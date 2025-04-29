@@ -1,0 +1,52 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px;
+    margin: 0 5px;
+  }
+  #listPic{
+    height: 30px;
+    width:30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Adjust table for smaller screens */
+
+  
+    /* Modal Content */
+    .modal-content {
+      width: 90%;
+      max-width: 400px;
+    }
+  
+    form input,
+    form select {
+      font-size: 14px;
+    }
+  
+  }
+  
+  
