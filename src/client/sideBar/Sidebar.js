@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { MdDashboard } from "react-icons/md";
 import { CgGym } from "react-icons/cg";

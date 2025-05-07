@@ -1,20 +1,15 @@
-import React, { use, useState } from "react";
-import { db } from "./firebase"; // Assuming your Firebase setup is already correctly initialized
-import { collection, addDoc } from "firebase/firestore"; // Modular SDK imports
+import React, { useState } from "react";
 import "./EnrollMember.css"; // Import specific CSS
 import axios from "axios";
 import { Box, Modal } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import { Form, Formik } from "formik";
 import {
   BasicSelect,
   BasicTextFields,
-  dataRequired,
   DatePickerInput,
   getNextInstallmentDate,
   TimePickerInput,
-  validatePhone,
 } from "../allFields";
 
 function EnrollMember() {

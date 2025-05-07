@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { FaDumbbell, FaHeartbeat, FaUtensils, FaBed, FaRunning, FaBrain } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 

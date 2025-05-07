@@ -3,15 +3,11 @@ import React, { useEffect, useState } from "react";
 import {
   PieChart,
   Pie,
-  Sector,
   Cell,
-  ResponsiveContainer,
   Tooltip as RechartsTooltip,
   XAxis,
   YAxis,
   BarChart,
-  Legend,
-  CartesianGrid,
   Bar,
 } from "recharts";
 import {
@@ -37,26 +33,6 @@ ChartJS.register(
 );
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
-const CustomTooltip = ({ active, payload }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div
-        style={{
-          background: "white",
-          padding: "8px",
-          border: "1px solid #ccc",
-          borderRadius: "5px",
-        }}
-      >
-        <p style={{ margin: 0 }}>
-          <strong>{payload[0].payload.status}:</strong> {payload[0].value}
-        </p>
-      </div>
-    );
-  }
-  return null;
-};
 
 function ChartsData() {
   const [clientdata, setClientData] = useState(null);

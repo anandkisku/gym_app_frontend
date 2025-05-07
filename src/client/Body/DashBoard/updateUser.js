@@ -3,7 +3,7 @@ import axios from "axios";
 import { FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-function UpdateUser({ setModalOpen, modalOpen, selectedMember, setSelectedMember, handleCloseModal }) {
+function UpdateUser({ selectedMember, handleCloseModal }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
